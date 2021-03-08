@@ -39,4 +39,4 @@ type TreeNode struct {
 halfrost 的 [LeetCode Cookbook](https://books.halfrost.com/leetcode/) 是一份非常好的 go 语言题解，题解非常多且都已经 beats 100%，在此一并推荐。
 
 
-题解里面的所有题目版权均归 [LeetCode](https://leetcode.com/) 和 [力扣中国](https://leetcode-cn.com/) 所有
+所有题目版权均归 [LeetCode](https://leetcode.com/) 与 [力扣中国](https://leetcode-cn.com/) 所有。
