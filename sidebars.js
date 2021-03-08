@@ -26,13 +26,13 @@ function getFiles(dir, blacklist) {
   return files;
 }
 
-let leetcodeSolutions = getFiles("docs/LeetCode/solutions", []).map(
-  (s) => (s = "LeetCode/solutions/" + s)
+let leetcodeSolutions = getFiles("docs/leetcode/solutions", []).map(
+  (s) => (s = "leetcode/solutions/" + s)
 );
 
 let snippetsItems = getFiles("docs/snippets", []).map(
   (s) => (s = "snippets/" + s)
-)
+);
 
 module.exports = {
   sidebar: [
@@ -46,7 +46,7 @@ module.exports = {
       items: [
         {
           type: "doc",
-          id: "LeetCode/preface",
+          id: "leetcode/preface",
         },
         {
           type: "category",
@@ -58,7 +58,7 @@ module.exports = {
     {
       type: "category",
       label: "代码片段",
-      items: snippetsItems
+      items: snippetsItems,
     },
   ],
 };
