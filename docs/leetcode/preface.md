@@ -1,6 +1,6 @@
 ---
 title: 前言
-slug: /Leetcode
+slug: /leetcode
 ---
 
 这里是一些 LeetCode 题解。

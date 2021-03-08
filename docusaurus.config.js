@@ -42,7 +42,7 @@ module.exports = {
           items: [
             {
               label: "LeetCode",
-              to: "docs/LeetCode/",
+              to: "docs/leetcode/",
             },
             // {
             //   label: "Second Doc",
