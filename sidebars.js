@@ -26,7 +26,7 @@ function getFiles(dir, blacklist) {
   return files;
 }
 
-let leetcodeSolutions = getFiles("docs/Leetcode/solutions", []).map(
+let leetcodeSolutions = getFiles("docs/LeetCode/solutions", []).map(
   (s) => (s = "LeetCode/solutions/" + s)
 );
 
@@ -42,7 +42,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Leetcode",
+      label: "LeetCode",
       items: [
         {
           type: "doc",
