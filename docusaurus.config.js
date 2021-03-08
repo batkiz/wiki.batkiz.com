@@ -1,6 +1,6 @@
 module.exports = {
   title: "batkiz's wiki",
-  tagline: "the WIKI of batkiz",
+  tagline: "啥？我竟然还写过这东西？",
   url: "https://wiki.batkiz.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -41,8 +41,8 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
-              to: "docs/",
+              label: "LeetCode",
+              to: "docs/LeetCode/",
             },
             // {
             //   label: "Second Doc",
@@ -91,16 +91,14 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/batkiz/wiki.batkiz.com/edit/main/",
+          editUrl: "https://github.com/batkiz/wiki.batkiz.com/edit/main/",
         },
         blog: {
-          blogTitle: 'blog of batkiz\'s wiki',
-          blogDescription: 'the blog of batkiz\'s wiki.',
+          blogTitle: "blog of batkiz's wiki",
+          blogDescription: "the blog of batkiz's wiki.",
           showReadingTime: false,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/batkiz/wiki.batkiz.com/edit/main/",
+          editUrl: "https://github.com/batkiz/wiki.batkiz.com/edit/main/",
           feedOptions: {
             type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} batkiz.`,
@@ -109,6 +107,16 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexPages: true,
+        language: ["en", "zh"],
       },
     ],
   ],

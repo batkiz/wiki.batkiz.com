@@ -1,33 +1,11 @@
-# Website
+# batkiz's wiki
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be5798af-0f7a-41ef-8f96-be154d60ba55/deploy-status)](https://app.netlify.com/sites/batkiz-wiki/deploys)
 
-## Installation
+有用亦或没用知识的集散地。
 
-```console
-yarn install
-```
+## LICENSE
 
-## Local Development
+代码以 MIT 协议发布。
 
-```console
-yarn start
-```
-
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```console
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+如无特殊声明，本网站内所有内容均以 [署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 协议分发。
