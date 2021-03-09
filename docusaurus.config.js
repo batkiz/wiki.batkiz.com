@@ -1,3 +1,6 @@
+const remarkMath = require("remark-math");
+const rehypeKatex = require("rehype-katex");
+
 module.exports = {
   title: "batkiz's wiki",
   tagline: "啥？我竟然还写过这东西？",
@@ -8,6 +11,15 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "batkiz", // Usually your GitHub org/user name.
   projectName: "wiki.batkiz.com", // Usually your repo name.
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
+    },
+  ],
   themeConfig: {
     prism: {
       theme: require("prism-react-renderer/themes/nightOwlLight"),
@@ -90,8 +102,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
+          showLastUpdateTime: true,
           editUrl: "https://github.com/batkiz/wiki.batkiz.com/edit/main/",
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           blogTitle: "blog of batkiz's wiki",
