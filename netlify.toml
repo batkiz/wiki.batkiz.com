@@ -1,0 +1,3 @@
+[build.environment]
+NODE_VERSION = "15.5.1"
+NPM_VERSION = "7.3.0"
